@@ -11,7 +11,44 @@ angular.module('app', [
   'stackBarChart'
 ]);
 
-
+var chartData = {
+  data1: [
+          {
+            name: '실비',
+            value: 0
+          },
+          {
+            name: '암',
+            value: 100
+          },
+          {
+            name: '뇌',
+            value: 60
+          },
+          {
+            name: '심장',
+            value: 0
+          },...
+        ],
+  data2: [
+          {
+            name: '실비',
+            value: 0
+          },
+          {
+            name: '암',
+            value: 25
+          },
+          {
+            name: '뇌',
+            value: 20
+          },
+          {
+            name: '심장',
+            value: 0
+          },...
+        ]
+};
 
 var colors = [
   '#F7C82D',
