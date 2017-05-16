@@ -85,13 +85,12 @@ angular.module('stackBarChart', []).directive('stackBarChart', function ($filter
 			});
 
 			function removeChart () {
-				svg.selectAll('g').remove();
 				svg.selectAll('rect')
 					.transition()
 					.duration(DURATION)
 					.attr('height', 0)
-					.attr('y', HEIGHT)
-					.remove();
+					.attr('y', HEIGHT);
+				svg.selectAll('*').remove();
 			}
 
 			
