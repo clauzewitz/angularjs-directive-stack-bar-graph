@@ -2,13 +2,12 @@ angular.module('stackBarChart', []).directive('stackBarChart', function ($filter
 	try {
 		return {
 			scope: {
-				'width': '=',
-				'height': '=',
+				'width': '=?',
+				'height': '=?',
 				'data': '=',
-				'description': '=',
+				'description': '=?',
 				'onClick': '&',
-				'accessor': '=',
-				'colors': '='
+				'colors': '=?'
 			},
 			restrict: 'E',
 			link: buildLink
